@@ -7,6 +7,8 @@
 	<meta name="description" content="Welcom to my profie page">
 	<script src="https://kit.fontawesome.com/7d1dec6752.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -41,6 +43,14 @@
 <img src="images/electro.jpg" class="img-circle">
 <img src="images/bazar.jpg" class="img-circle">
 </div>
+<div id='map'>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpYzI4IiwiYSI6ImNqeDRwc2NhMjA5eHM0M3FsbXhyb2t6ZGsifQ.-0HP5boLSAZiwckg3aqrYA';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
 <div id="links">
 	<h2>Liens utiles</h2>
 </div>
@@ -65,7 +75,3 @@
            </ul>
        </div>
        </body>
-
-
-
-
